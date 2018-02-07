@@ -14,7 +14,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Welcome to Matts Macros"
+        android:text="@string/welcome_to_matts_macros"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,14 +23,15 @@
     <EditText
         android:id="@+id/carbs"
         android:layout_width="108dp"
-        android:layout_height="39dp"
+        android:layout_height="42dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Insert carbs"
+        android:hint="@string/insert_carbs"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginLeft="8dp" />
 
     <EditText
         android:id="@+id/fats"
@@ -40,9 +41,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Insert fats"
+        android:hint="@string/insert_fats"
         android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/proteins"
+        app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toEndOf="@+id/carbs"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -53,10 +55,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Insert proteins"
+        android:hint="@string/insert_proteins"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginRight="8dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -70,7 +73,23 @@
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sub" />
+        app:layout_constraintTop_toBottomOf="@+id/sub"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/currentmacros"
+        android:layout_width="255dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:text="                    "
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/sub"
@@ -84,40 +103,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fats" />
 
-    <TextView
-        android:id="@+id/currentmacros"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="                    "
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
     <EditText
         android:id="@+id/mealcarbs"
-        android:layout_width="100dp"
-        android:layout_height="48dp"
+        android:layout_width="99dp"
+        android:layout_height="41dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Meal carbs"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentmacros" />
+        app:layout_constraintTop_toBottomOf="@+id/currentmacros"
+        tools:ignore="RtlCompat" />
 
     <EditText
         android:id="@+id/mealfats"
         android:layout_width="89dp"
         android:layout_height="41dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Meal fats"
         android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/mealproteins"
+        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toEndOf="@+id/mealcarbs"
         app:layout_constraintTop_toBottomOf="@+id/currentmacros" />
 
@@ -126,14 +134,13 @@
         android:layout_width="119dp"
         android:layout_height="39dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Meal proteins"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mealfats"
-        app:layout_constraintTop_toBottomOf="@+id/currentmacros" />
+        app:layout_constraintTop_toBottomOf="@+id/currentmacros"
+        tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/sub2"
@@ -153,9 +160,36 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/holo_red_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sub2" />
+
+    <TextView
+        android:id="@+id/Macrosremaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Macros Remaining"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub2" />
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </android.support.constraint.ConstraintLayout>

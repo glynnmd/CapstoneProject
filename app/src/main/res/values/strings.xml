@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Matts Macros</string>
     <string name="greeting">eat shit, go home</string>
+    <string name="welcome_to_matts_macros">Welcome to Matts Macros</string>
+    <string name="insert_carbs">Insert carbs</string>
+    <string name="insert_fats">Insert fats</string>
+    <string name="insert_proteins">Insert proteins</string>
 </resources>
