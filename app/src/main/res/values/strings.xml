@@ -5,4 +5,5 @@
     <string name="insert_carbs">Insert carbs</string>
     <string name="insert_fats">Insert fats</string>
     <string name="insert_proteins">Insert proteins</string>
+    <string name="title_activity_savedmeals">Savedmeals</string>
 </resources>

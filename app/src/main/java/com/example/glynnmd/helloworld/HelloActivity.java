@@ -2,6 +2,7 @@ package com.example.glynnmd.helloworld;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -63,5 +64,13 @@ public class HelloActivity extends Activity {
 
             }
         });
-    }
+
+        Button savedmeals = (Button) findViewById(R.id.savemeals);
+        savedmeals.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HelloActivity.this, Savedmeals.class));
+            }
+        });    }
 }
