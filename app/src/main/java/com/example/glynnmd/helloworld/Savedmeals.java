@@ -11,11 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import java.util.ArrayList;
 
 import static com.example.glynnmd.helloworld.R.id.mealname;
 
 public class Savedmeals extends AppCompatActivity {
 
+    ArrayList<String> createdText = new ArrayList<String>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +38,17 @@ public class Savedmeals extends AppCompatActivity {
         });
         TextView textView = new TextView(this);
         textView.setText("HELLO!");
+        createSavedTextViews();
 
+    }
+
+
+    private void createSavedTextViews()
+    {
+        for(int i = 0; i < this.createdText.size(); i+=4)
+        {
+            createNewTextView(createdText.get(i),createdText.get(i+1),createdText.get(i+2),createdText.get(i+3));
+        }
     }
 
 
@@ -45,6 +57,10 @@ public class Savedmeals extends AppCompatActivity {
         final TextView textView = new TextView(this);
         textView.setLayoutParams(lparams);
         textView.setText("Name : " + text + " Carbs :" + text2 + "g Fats :" + text3 + "g Proteins :" + text4 + "g");
+        createdText.add("Name : " + text);
+        createdText.add("Carbs :" + text2 + "g ");
+        createdText.add("Fats :" + text3 + "g");
+        createdText.add("Proteins :" + text4 + "g");
         return textView;
     }
 
