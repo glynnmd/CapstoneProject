@@ -18,7 +18,7 @@ public class HelloActivity extends Activity {
     private int fatsvalue;
     private int proteinsvalue;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hello);
 
@@ -39,6 +39,7 @@ public class HelloActivity extends Activity {
                 carbvalue = Integer.parseInt(carbs.getText().toString());
                 fatsvalue = Integer.parseInt(fats.getText().toString());
                 proteinsvalue = Integer.parseInt(proteins.getText().toString());
+                onSaveInstanceState(savedInstanceState);
             }
         });
 
@@ -72,5 +73,23 @@ public class HelloActivity extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(HelloActivity.this, Savedmeals.class));
             }
-        });    }
+        });
+
+        onRestoreInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle SavedInstanceState) {
+        super.onSaveInstanceState(SavedInstanceState);
+        SavedInstanceState.putInt("carbs", carbvalue);
+        SavedInstanceState.putInt("fats", fatsvalue);
+        SavedInstanceState.putInt("proteins", proteinsvalue);
+    }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        carbvalue = savedInstanceState.getInt("carbs");
+        fatsvalue = savedInstanceState.getInt("fats");
+        proteinsvalue = savedInstanceState.getInt("proteins");
+    }
 }
