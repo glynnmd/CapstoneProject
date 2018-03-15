@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.matt.macros.Savedmeals">
+
+        <LinearLayout
+            android:id="@+id/savedmealslayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/savedmealsdirections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Insert meal name and corresponding macros"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/mealname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Meal Name Here"
+                android:inputType="text|textShortMessage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/savedcarbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Insert Carbs"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/savedfats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Insert Fats"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/savedproteins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Insert Proteins"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/savedmealsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+            <LinearLayout
+                android:id="@+id/inserttext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>

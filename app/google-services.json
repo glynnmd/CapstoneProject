@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "930655562411",
+    "firebase_url": "https://matts-macros.firebaseio.com",
+    "project_id": "matts-macros",
+    "storage_bucket": "matts-macros.appspot.com"
+
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930655562411:android:e8fabd59b75edd87",
+        "android_client_info": {
+          "package_name": "com.example.matt.macros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930655562411-fb6vcnffrqmjiga0k846ip1rfov3repr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.matt.macros",
+            "certificate_hash": "556ac52a22ecdfda57bf6942a215e0bc4c58a889"
+          }
+        },
+        {
+          "client_id": "930655562411-4e46h9uofq757vb2r2uvvetcjiul5se0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqmDXkPWQiPafR-wfyNcwY8nnpcDNgbzA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930655562411-4e46h9uofq757vb2r2uvvetcjiul5se0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1",
+
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+
+
+}
