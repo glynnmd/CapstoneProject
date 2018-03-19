@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 currentmacros.setText("Carbs : " + Integer.parseInt(carbs.getText().toString()) + "  Fats : "
                         + Integer.parseInt(fats.getText().toString()) + "  Proteins : " + Integer.parseInt(proteins.getText().toString()));
 
-                int cal = (Integer.parseInt(proteins.getText().toString()) * 4) + (Integer.parseInt(fats.getText().toString()) * 9) + (Integer.parseInt(carbs.getText().toString()) * 4)
-                        ;                calories.setText("Calories :" + cal);
+                int cal = (Integer.parseInt(proteins.getText().toString()) * 4) + (Integer.parseInt(fats.getText().toString()) * 9) + (Integer.parseInt(carbs.getText().toString()) * 4);
+                calories.setText("Calories :" + cal);
 
                 carbvalue = Integer.parseInt(carbs.getText().toString());
                 fatsvalue = Integer.parseInt(fats.getText().toString());
