@@ -1,9 +1,14 @@
 package com.example.matt.macros;
 
         import android.annotation.SuppressLint;
+        import android.content.Intent;
         import android.os.Bundle;
+        import android.support.annotation.NonNull;
+        import android.support.design.widget.BottomNavigationView;
         import android.support.v7.app.AppCompatActivity;
         import android.support.v7.widget.Toolbar;
+        import android.view.Menu;
+        import android.view.MenuItem;
         import android.view.View;
         import android.widget.Button;
         import android.widget.EditText;
@@ -40,6 +45,32 @@ public class Savedmeals extends AppCompatActivity {
         TextView textView = new TextView(this);
         textView.setText("HELLO!");
         createSavedTextViews();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(1);
+        menuItem.setChecked(true);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch(item.getItemId())
+                {
+                    case R.id.navigation_home:
+                        Intent home = new Intent(Savedmeals.this, MainActivity.class);
+                        startActivity(home);
+                        finish();
+                        break;
+                    case R.id.navsaved:
+
+                    case R.id.navsuggestions:
+                        Intent sugg = new Intent(Savedmeals.this, Suggestions.class);
+                        startActivity(sugg);
+                        finish();
+                        break;
+                }
+                return false;
+            }
+        });
 
     }
 

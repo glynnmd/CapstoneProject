@@ -3,8 +3,12 @@ package com.example.matt.macros;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private int proteinsvalue = 0;
     FirebaseDatabase database;
     DatabaseReference test;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -89,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
+/*
         Button savedmeals = (Button) findViewById(R.id.savemeals);
         savedmeals.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
@@ -105,6 +110,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Suggestions.class));
+            }
+        });
+*/
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(0);
+        menuItem.setChecked(true);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch(item.getItemId())
+                {
+                    case R.id.navigation_home:
+
+                    case R.id.navsaved:
+                        Intent save = new Intent(MainActivity.this, Savedmeals.class);
+                        startActivity(save);
+                        finish();
+                        break;
+                    case R.id.navsuggestions:
+                        Intent sugg = new Intent(MainActivity.this, Suggestions.class);
+                        startActivity(sugg);
+                        finish();
+                        break;
+                }
+                return false;
             }
         });
 

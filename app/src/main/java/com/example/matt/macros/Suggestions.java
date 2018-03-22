@@ -1,8 +1,13 @@
 package com.example.matt.macros;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -122,6 +127,15 @@ public class Suggestions extends AppCompatActivity {
                     test = database.getReference("values/proteins");
                     test.setValue(pro);
 
+                    test = database.getReference("values/adjustedcarbs");
+                    test.setValue(carb);
+
+                    test = database.getReference("values/adjustedfats");
+                    test.setValue(fat);
+
+                    test = database.getReference("values/adjustedproteins");
+                    test.setValue(pro);
+
                 }
                 else if (text == "Maintain Weight")
                 {
@@ -136,6 +150,15 @@ public class Suggestions extends AppCompatActivity {
                     test.setValue(fat);
 
                     test = database.getReference("values/proteins");
+                    test.setValue(pro);
+
+                    test = database.getReference("values/adjustedcarbs");
+                    test.setValue(carb);
+
+                    test = database.getReference("values/adjustedfats");
+                    test.setValue(fat);
+
+                    test = database.getReference("values/adjustedproteins");
                     test.setValue(pro);
                 }
                 else
@@ -152,8 +175,44 @@ public class Suggestions extends AppCompatActivity {
 
                     test = database.getReference("values/proteins");
                     test.setValue(pro);
+
+                    test = database.getReference("values/adjustedcarbs");
+                    test.setValue(carb);
+
+                    test = database.getReference("values/adjustedfats");
+                    test.setValue(fat);
+
+                    test = database.getReference("values/adjustedproteins");
+                    test.setValue(pro);
                 }
 
+            }
+        });
+
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(2);
+        menuItem.setChecked(true);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch(item.getItemId())
+                {
+                    case R.id.navigation_home:
+                        Intent home = new Intent(Suggestions.this, MainActivity.class);
+                        startActivity(home);
+                        finish();
+                        break;
+                    case R.id.navsaved:
+                        Intent sugg = new Intent(Suggestions.this, Savedmeals.class);
+                        startActivity(sugg);
+                        finish();
+                        break;
+                    case R.id.navsuggestions:
+
+                }
+                return false;
             }
         });
 
