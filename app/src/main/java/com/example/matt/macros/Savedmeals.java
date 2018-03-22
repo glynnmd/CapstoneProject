@@ -1,6 +1,7 @@
 package com.example.matt.macros;
 
         import android.annotation.SuppressLint;
+        import android.content.Context;
         import android.content.Intent;
         import android.os.Bundle;
         import android.support.annotation.NonNull;
@@ -14,6 +15,8 @@ package com.example.matt.macros;
         import android.widget.EditText;
         import android.widget.LinearLayout;
         import android.widget.TextView;
+        import android.widget.Toast;
+
         import java.util.ArrayList;
         import com.google.firebase.database.DatabaseReference;
         import com.google.firebase.database.FirebaseDatabase;
@@ -38,13 +41,45 @@ public class Savedmeals extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                layout.addView(createNewTextView(mealname.getText().toString(), savedcarbs.getText().toString(), savedfats.getText().toString(), savedproteins.getText().toString()));
+                if((mealname.getText().length() >= 1 && savedcarbs.getText().length() >= 1
+                        && savedfats.getText().length() >= 1 && savedproteins.getText().length() >= 1)) {
+                    database = FirebaseDatabase.getInstance();
+
+                    DatabaseReference test = database.getReference("food/" + mealname.getText().toString());
+                    test.setValue(mealname.getText().toString());
+
+                    test = database.getReference("food/" + mealname.getText().toString() + "/carbs");
+                    test.setValue(savedcarbs.getText().toString());
+
+                    test = database.getReference("food/" + mealname.getText().toString() + "/fats");
+                    test.setValue(savedfats.getText().toString());
+
+                    test = database.getReference("food/" + mealname.getText().toString() + "/proteins");
+                    test.setValue(savedproteins.getText().toString());
+
+                    Context context = getApplicationContext();
+                    String toaststring = "Submitted!";
+                    int duration = Toast.LENGTH_LONG;
+
+                    Toast toast = Toast.makeText(context, toaststring, duration);
+                    toast.show();
+                }
+                else
+                {
+                    Context context = getApplicationContext();
+                    String toaststring = "Complete Fields!";
+                    int duration = Toast.LENGTH_LONG;
+
+                    Toast toast = Toast.makeText(context, toaststring, duration);
+                    toast.show();
+                }
+
 
             }
         });
         TextView textView = new TextView(this);
-        textView.setText("HELLO!");
-        createSavedTextViews();
+        textView.setText("");
+
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
         Menu menu = bottomNavigationView.getMenu();
@@ -72,42 +107,6 @@ public class Savedmeals extends AppCompatActivity {
             }
         });
 
-    }
-
-
-    private void createSavedTextViews()
-    {
-        for(int i = 0; i < this.createdText.size(); i+=4)
-        {
-            createNewTextView(createdText.get(i),createdText.get(i+1),createdText.get(i+2),createdText.get(i+3));
-        }
-    }
-
-
-    private TextView createNewTextView(String text, String text2, String text3, String text4) {
-        final LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        final TextView textView = new TextView(this);
-        textView.setLayoutParams(lparams);
-        textView.setText("Name : " + text + " Carbs :" + text2 + "g Fats :" + text3 + "g Proteins :" + text4 + "g");
-        createdText.add("Name : " + text);
-        createdText.add("Carbs :" + text2 + "g ");
-        createdText.add("Fats :" + text3 + "g");
-        createdText.add("Proteins :" + text4 + "g");
-        database = FirebaseDatabase.getInstance();
-
-        DatabaseReference test = database.getReference("food/" + text);
-        test.setValue(text);
-
-        test = database.getReference("food/" + text + "/carbs");
-        test.setValue(text2);
-
-        test = database.getReference("food/" + text + "/fats");
-        test.setValue(text3);
-
-        test = database.getReference("food/" + text + "/proteins");
-        test.setValue(text4);
-
-        return textView;
     }
 
 }

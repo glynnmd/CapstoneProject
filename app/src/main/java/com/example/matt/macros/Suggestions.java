@@ -14,6 +14,8 @@ import android.widget.Spinner;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.content.Context;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -185,6 +187,12 @@ public class Suggestions extends AppCompatActivity {
                     test = database.getReference("values/adjustedproteins");
                     test.setValue(pro);
                 }
+                Context context = getApplicationContext();
+                String toaststring = "Submitted!";
+                int duration = Toast.LENGTH_LONG;
+
+                Toast toast = Toast.makeText(context, toaststring, duration);
+                toast.show();
 
             }
         });
