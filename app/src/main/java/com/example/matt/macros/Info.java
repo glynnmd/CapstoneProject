@@ -5,23 +5,44 @@ package com.example.matt.macros;
  */
 
 public class Info {
-    private String carbs = "";
+    private long adjustedcarbs = 0;
+    private long adjustedfats = 0;
+    private long adjustedproteins = 0;
 
+
+    public long getAdjustedcarbs() {
+        return adjustedcarbs;
+    }
+
+    public void setAdjustedcarbs(long adjustedcarbs) {
+        this.adjustedcarbs = adjustedcarbs;
+    }
+
+    public long getAdjustedfats() {
+        return adjustedfats;
+    }
+
+    public void setAdjustedfats(long adjustedfats) {
+        this.adjustedfats = adjustedfats;
+    }
+
+    public long getAdjustedproteins() {
+        return adjustedproteins;
+    }
+
+    public void setAdjustedproteins(long adjustedproteins) {
+        this.adjustedproteins = adjustedproteins;
+    }
 
     public Info()
     {
-         carbs = "";
+        adjustedcarbs = 0;
+        adjustedfats = 0;
+        adjustedproteins = 0;
 
     }
 
-    public String getcarbs(){
-        return carbs;
-    }
 
-
-    public void setcarbs(String carbs){
-        this.carbs = carbs;
-    }
 
 
 }

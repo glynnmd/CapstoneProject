@@ -12,8 +12,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,11 +34,20 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     private Button pointless;
-    private int carbvalue = 0;
-    private int fatsvalue = 0;
-    private int proteinsvalue = 0;
+    private long carbvalue = 0;
+    private long fatsvalue = 0;
+    private long proteinsvalue = 0;
     FirebaseDatabase database;
     DatabaseReference test;
+    private ListView mListView;
+    private ListView mListView2;
+    private ListView mListView3;
+
+    private ArrayAdapter adapter;
+    private ArrayAdapter adapter2;
+    private ArrayAdapter adapter3;
+    private ArrayAdapter adapter4;
+
 
 
 
@@ -43,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mListView = (ListView) findViewById(R.id.listview);
+        mListView2 = (ListView) findViewById(R.id.listview2);
+        mListView3 = (ListView) findViewById(R.id.listview3);
+
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         test = database.getReference().child("values");
@@ -50,7 +66,50 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Map<Long, Long> data = (Map<Long, Long>) dataSnapshot.getValue();
-                Toast.makeText(getApplicationContext(), "LIT + " + data.get("adjustedcarbs"), Toast.LENGTH_LONG).show();
+
+                ArrayList<Long> array = new ArrayList<>();
+                ArrayList<Long> array2 = new ArrayList<>();
+                ArrayList<Long> array3 = new ArrayList<>();
+                ArrayList<Long> array4 = new ArrayList<>();
+
+                array4.add(data.get("adjustedcarbs"));
+                array.add(data.get("carbs"));
+
+                array4.add(data.get("adjustedfats"));
+                array2.add(data.get("fats"));
+
+                array4.add(data.get("adjustedproteins"));
+                array3.add(data.get("proteins"));
+
+                adapter = new ArrayAdapter(MainActivity.this, R.layout.listview, array);
+                adapter2 = new ArrayAdapter(MainActivity.this, R.layout.listview, array2);
+                adapter3 = new ArrayAdapter(MainActivity.this, R.layout.listview, array3);
+                adapter4 = new ArrayAdapter(MainActivity.this, R.layout.listview, array4);
+
+
+                mListView.setAdapter(adapter);
+                mListView2.setAdapter(adapter2);
+                mListView3.setAdapter(adapter3);
+
+                ProgressBar prog = findViewById(R.id.prog);
+                ProgressBar prog2 = findViewById(R.id.prog2);
+                ProgressBar prog3 = findViewById(R.id.prog3);
+
+                carbvalue = (long)adapter4.getItem(0) * 100;
+                fatsvalue = (long)adapter.getItem(0);
+                int m2 = (int) (carbvalue/fatsvalue);
+                prog.setProgress(m2);
+
+
+                carbvalue = (long)adapter4.getItem(1) * 100;
+                fatsvalue = (long)adapter2.getItem(0);
+                m2 = (int) (carbvalue/fatsvalue);
+                prog2.setProgress(m2);
+
+                carbvalue = (long)adapter4.getItem(2) * 100;
+                fatsvalue = (long)adapter3.getItem(0);
+                m2 = (int) (carbvalue/fatsvalue);
+                prog3.setProgress(m2);
             }
 
             @Override
@@ -59,6 +118,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+
+
+        /*
         Button sub;
         sub = (Button) findViewById(R.id.sub);
         sub.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+*/
 /*
         Button savedmeals = (Button) findViewById(R.id.savemeals);
         savedmeals.setOnClickListener(new View.OnClickListener() {
