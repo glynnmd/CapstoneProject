@@ -129,13 +129,13 @@ public class Suggestions extends AppCompatActivity {
                     test = database.getReference("values/proteins");
                     test.setValue(pro);
 
-                    test = database.getReference("values/adjustedcarbs");
+                    test = database.getReference("valuesleft/adjustedcarbs");
                     test.setValue(carb);
 
-                    test = database.getReference("values/adjustedfats");
+                    test = database.getReference("valuesleft/adjustedfats");
                     test.setValue(fat);
 
-                    test = database.getReference("values/adjustedproteins");
+                    test = database.getReference("valuesleft/adjustedproteins");
                     test.setValue(pro);
 
                 }
@@ -154,13 +154,13 @@ public class Suggestions extends AppCompatActivity {
                     test = database.getReference("values/proteins");
                     test.setValue(pro);
 
-                    test = database.getReference("values/adjustedcarbs");
+                    test = database.getReference("valuesleft/adjustedcarbs");
                     test.setValue(carb);
 
-                    test = database.getReference("values/adjustedfats");
+                    test = database.getReference("valuesleft/adjustedfats");
                     test.setValue(fat);
 
-                    test = database.getReference("values/adjustedproteins");
+                    test = database.getReference("valuesleft/adjustedproteins");
                     test.setValue(pro);
                 }
                 else
@@ -172,19 +172,20 @@ public class Suggestions extends AppCompatActivity {
                     test = database.getReference("values/carbs");
                     test.setValue(carb);
 
+
                     test = database.getReference("values/fats");
                     test.setValue(fat);
 
                     test = database.getReference("values/proteins");
                     test.setValue(pro);
 
-                    test = database.getReference("values/adjustedcarbs");
+                    test = database.getReference("valuesleft/adjustedcarbs");
                     test.setValue(carb);
 
-                    test = database.getReference("values/adjustedfats");
+                    test = database.getReference("valuesleft/adjustedfats");
                     test.setValue(fat);
 
-                    test = database.getReference("values/adjustedproteins");
+                    test = database.getReference("valuesleft/adjustedproteins");
                     test.setValue(pro);
                 }
                 Context context = getApplicationContext();

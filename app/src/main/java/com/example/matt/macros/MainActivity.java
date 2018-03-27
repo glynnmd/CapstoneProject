@@ -15,12 +15,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -33,10 +38,26 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference test;
 
 
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        test = database.getReference().child("values");
+        test.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Map<Long, Long> data = (Map<Long, Long>) dataSnapshot.getValue();
+                Toast.makeText(getApplicationContext(), "LIT + " + data.get("adjustedcarbs"), Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
         Button sub;
         sub = (Button) findViewById(R.id.sub);
@@ -108,7 +129,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Savedmeals.class));
             }
         });
-
         Button sugge = (Button) findViewById(R.id.suggestions);
         sugge.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
@@ -157,6 +177,11 @@ public class MainActivity extends AppCompatActivity {
         //onRestoreInstanceState(savedInstanceState);
 
     }
+
+
+
+
+
 
 }
 

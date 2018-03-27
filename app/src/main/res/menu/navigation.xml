@@ -16,4 +16,9 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="Suggestions" />
 
+    <item
+        android:id="@+id/navfood"
+        android:icon="@drawable/ic_food_"
+        android:title="Foods" />
+
 </menu>
