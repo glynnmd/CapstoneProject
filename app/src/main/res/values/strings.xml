@@ -7,4 +7,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_activity_foods">Foods</string>
+    <string name="foods">Foods</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="save_meals">Save Meals</string>
+    <string name="title_activity_food">Food</string>
 </resources>

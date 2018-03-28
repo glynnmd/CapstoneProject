@@ -223,6 +223,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(sugg);
                         finish();
                         break;
+                    case R.id.navfood:
+                        Intent food = new Intent(MainActivity.this, Food.class);
+                        startActivity(food);
+                        finish();
+                        break;
                 }
                 return false;
             }

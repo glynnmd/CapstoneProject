@@ -102,6 +102,11 @@ public class Savedmeals extends AppCompatActivity {
                         startActivity(sugg);
                         finish();
                         break;
+                    case R.id.navfood:
+                        Intent food = new Intent(Savedmeals.this, Food.class);
+                        startActivity(food);
+                        finish();
+                        break;
                 }
                 return false;
             }

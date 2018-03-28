@@ -223,6 +223,11 @@ public class Suggestions extends AppCompatActivity {
                         finish();
                         break;
                     case R.id.navsuggestions:
+                    case R.id.navfood:
+                        Intent food = new Intent(Suggestions.this, Food.class);
+                        startActivity(food);
+                        finish();
+                        break;
 
                 }
                 return false;
