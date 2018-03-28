@@ -120,13 +120,13 @@ public class Suggestions extends AppCompatActivity {
                             test.setValue(pro);
 
                             test = database.getReference("values/adjustedcarbs");
-                            test.setValue(carb);
+                            test.setValue(0);
 
                             test = database.getReference("values/adjustedfats");
-                            test.setValue(fat);
+                            test.setValue(0);
 
                             test = database.getReference("values/adjustedproteins");
-                            test.setValue(pro);
+                            test.setValue(0);
 
                         } else if (text == "Maintain Weight") {
                             sugcarb.setText("Carbs: " + carb);
@@ -143,13 +143,13 @@ public class Suggestions extends AppCompatActivity {
                             test.setValue(pro);
 
                             test = database.getReference("values/adjustedcarbs");
-                            test.setValue(carb);
+                            test.setValue(0);
 
                             test = database.getReference("values/adjustedfats");
-                            test.setValue(fat);
+                            test.setValue(0);
 
                             test = database.getReference("values/adjustedproteins");
-                            test.setValue(pro);
+                            test.setValue(0);
                         } else {
                             sugcarb.setText("Carbs: " + carb);
                             sugfat.setText("Fats: " + fat);
@@ -166,13 +166,13 @@ public class Suggestions extends AppCompatActivity {
                             test.setValue(pro);
 
                             test = database.getReference("values/adjustedcarbs");
-                            test.setValue(carb);
+                            test.setValue(0);
 
                             test = database.getReference("values/adjustedfats");
-                            test.setValue(fat);
+                            test.setValue(0);
 
                             test = database.getReference("values/adjustedproteins");
-                            test.setValue(pro);
+                            test.setValue(0);
                         }
                         Context context = getApplicationContext();
                         String toaststring = "Submitted!";
