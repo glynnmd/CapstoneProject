@@ -13,7 +13,7 @@ import android.os.Bundle;
  * Created by Matt on 3/28/18.
  */
 
-public class DatabaseFoodFragment extends Fragment {
+public class DatabaseFoodFragment extends android.support.v4.app.Fragment {
     private static final String TAG = "Tab1Fragment";
 
     @Nullable

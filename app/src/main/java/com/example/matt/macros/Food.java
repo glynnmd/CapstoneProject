@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,10 +17,20 @@ public class Food extends AppCompatActivity {
 
     private SectionsPageAdapter mSectionsPageAdapter;
 
+    private ViewPager mViewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food2);
+        mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
+
+        // Set up the ViewPager with the sections adapter.
+        mViewPager = (ViewPager) findViewById(R.id.container);
+        setupViewPager(mViewPager);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(mViewPager);
 
     }
 
@@ -55,8 +66,8 @@ public class Food extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
-        //adapter.addFragment(new ManualFoodFragment(), "TAB1");
-        //adapter.addFragment(new DatabaseFoodFragment(), "TAB2");
+        adapter.addFragment(new ManualFoodFragment(), "Manual Entry");
+        adapter.addFragment(new DatabaseFoodFragment(), "Saved Meals");
         viewPager.setAdapter(adapter);
     }
 }
