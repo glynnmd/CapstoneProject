@@ -5,40 +5,52 @@ package com.example.matt.macros;
  */
 
 public class Info {
-    private long adjustedcarbs = 0;
-    private long adjustedfats = 0;
-    private long adjustedproteins = 0;
+    private long foodcarbs;
+    private long foodfats;
+    private long foodproteins;
+    private String name;
 
 
-    public long getAdjustedcarbs() {
-        return adjustedcarbs;
+    public long getFoodcarbs() {
+        return foodcarbs;
     }
 
-    public void setAdjustedcarbs(long adjustedcarbs) {
-        this.adjustedcarbs = adjustedcarbs;
+    public void setFoodcarbs(long foodcarbs) {
+        this.foodcarbs = foodcarbs;
     }
 
-    public long getAdjustedfats() {
-        return adjustedfats;
+    public long getFoodfats() {
+        return foodfats;
     }
 
-    public void setAdjustedfats(long adjustedfats) {
-        this.adjustedfats = adjustedfats;
+    public void setFoodfats(long foodfats) {
+        this.foodfats = foodfats;
     }
 
-    public long getAdjustedproteins() {
-        return adjustedproteins;
+    public long getFoodproteins() {
+        return foodproteins;
     }
 
-    public void setAdjustedproteins(long adjustedproteins) {
-        this.adjustedproteins = adjustedproteins;
+    public void setFoodproteins(long foodproteins) {
+        this.foodproteins = foodproteins;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
     }
 
     public Info()
     {
-        adjustedcarbs = 0;
-        adjustedfats = 0;
-        adjustedproteins = 0;
+        foodcarbs = 0;
+        foodfats = 0;
+        foodproteins = 0;
+        name = "";
 
     }
 

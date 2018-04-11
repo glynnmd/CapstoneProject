@@ -10,8 +10,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 import android.os.Bundle;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Map;
 
 
 /**
@@ -20,11 +30,34 @@ import android.os.Bundle;
 
 public class DatabaseFoodFragment extends android.support.v4.app.Fragment {
     private static final String TAG = "Tab1Fragment";
+    FirebaseDatabase database;
+    DatabaseReference test;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_food,container,false);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        test = database.getReference().child("food");
+        test.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Map<Long, Long> data = (Map<Long, Long>) dataSnapshot.getValue();
+                ListView list = (ListView) getView().findViewById(R.id.list);
+                Info yeet[];
+
+                ArrayAdapter<Info> info = new ArrayAdapter<Info>(this, R.layout.fragment_food, yeet);
+
+
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
 
 
