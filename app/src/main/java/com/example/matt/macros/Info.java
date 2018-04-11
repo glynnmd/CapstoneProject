@@ -54,6 +54,11 @@ public class Info {
 
     }
 
+    public String toString()
+    {
+        return "" + name + " ..." + foodcarbs + "   " + foodfats;
+    }
+
 
 
 
