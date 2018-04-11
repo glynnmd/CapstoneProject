@@ -6,6 +6,7 @@ import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -39,27 +40,32 @@ public class DatabaseFoodFragment extends android.support.v4.app.Fragment {
     FirebaseDatabase database;
     DatabaseReference test;
     ListView list;
-    private ArrayList<String> arrayList = new ArrayList<>();
-    private ArrayAdapter<String> adapter;
+    private ArrayList<Info> arrayList = new ArrayList<>();
+    private ArrayAdapter<Info> adapter;
+    private RecyclerView recyclerView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_food,container,false);
+        recyclerView = (RecyclerView) view.findViewById(R.id.drawerlist);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         test = database.getReference().child("food");
-        list = (ListView) view.findViewById(R.id.data_list);
-        adapter = new ArrayAdapter<String>(getContext(), R.layout.fragment_food, arrayList);
+        adapter = new ArrayAdapter<Info>(getContext(), R.layout.fragment_food, arrayList);
 
         test.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot ds : dataSnapshot.getChildren())
                 {
-                    String s = ds.getKey();
+                    Info info = new Info();
+                    info.setName(ds.getKey());
                     Map<Long, Long> data = (Map<Long, Long>) ds.getValue();
-                    arrayList.add(ds.getKey() + data.get("carbs"));
+                    info.setFoodcarbs(data.get("carbs"));
+                    info.setFoodfats(data.get("fats"));
+                    info.setFoodproteins(data.get("proteins"));
+                    arrayList.add(info);
 
 
 
@@ -76,7 +82,8 @@ public class DatabaseFoodFragment extends android.support.v4.app.Fragment {
                 //arrayList.add(s);
 
                 adapter.notifyDataSetChanged();
-                list.setAdapter(adapter);
+                //list.setAdapter(adapter);
+                //recyclerView.setAdapter(adapter);
 
             }
 
