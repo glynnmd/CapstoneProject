@@ -6,6 +6,7 @@ import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -13,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,22 +39,31 @@ import java.util.Map;
 
 public class DatabaseFoodFragment extends android.support.v4.app.Fragment {
     private static final String TAG = "Tab1Fragment";
-    FirebaseDatabase database;
+    /*FirebaseDatabase database;
     DatabaseReference test;
     ListView list;
     private ArrayList<Info> arrayList = new ArrayList<>();
     private ArrayAdapter<Info> adapter;
     private RecyclerView recyclerView;
+    */
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_food,container,false);
-        recyclerView = (RecyclerView) view.findViewById(R.id.drawerlist);
+        //recyclerView = (RecyclerView) view.findViewById(R.id.drawerlist);
+        //com.example.matt.macros.ListAdapter listAdapter = new com.example.matt.macros.ListAdapter();
+        //recyclerView.setAdapter(listAdapter);
+        //RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        //recyclerView.setLayoutManager(layoutManager);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+
+
+        /*FirebaseDatabase database = FirebaseDatabase.getInstance();
         test = database.getReference().child("food");
-        adapter = new ArrayAdapter<Info>(getContext(), R.layout.fragment_food, arrayList);
+        //adapter = new ArrayAdapter<Info>(getContext(), R.layout.fragment_food, arrayList);
 
         test.addValueEventListener(new ValueEventListener() {
             @Override
@@ -77,7 +88,7 @@ public class DatabaseFoodFragment extends android.support.v4.app.Fragment {
                 /*Map<Long, Long> data = (Map<Long, Long>) dataSnapshot.child(dataSnapshot.getKey()).getValue();
                 food.setFoodcarbs(4);
                 food.setFoodfats(4);
-                food.setFoodproteins(4);*/
+                food.setFoodproteins(4);
 
                 //arrayList.add(s);
 
@@ -91,7 +102,7 @@ public class DatabaseFoodFragment extends android.support.v4.app.Fragment {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        });*/
 
 
 

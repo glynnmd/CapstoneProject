@@ -58,17 +58,14 @@ public class ManualFoodFragment extends android.support.v4.app.Fragment {
 
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 test = database.getReference().child("values");
-                test.addValueEventListener(new ValueEventListener() {
+                test.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         Map<Long, Long> data = (Map<Long, Long>) dataSnapshot.getValue();
-
                         c = data.get("adjustedcarbs");
                         f = data.get("adjustedfats");
                         p = data.get("adjustedproteins");
-
-
-
+                        setCarbvalue(c, f, p);
 
 
                     }
@@ -79,14 +76,6 @@ public class ManualFoodFragment extends android.support.v4.app.Fragment {
                     }
                 });
 
-                test = database.getReference("values/adjustedcarbs");
-                test.setValue(carbvalue + c);
-
-                test = database.getReference("values/adjustedfats");
-                test.setValue(fatsvalue + f);
-
-                test = database.getReference("values/adjustedproteins");
-                test.setValue(proteinsvalue + p);
 
                 Toast.makeText(getActivity(), "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show();
 
@@ -99,10 +88,17 @@ public class ManualFoodFragment extends android.support.v4.app.Fragment {
 
     }
 
-    public void setCarbvalue(long value)
+    public void setCarbvalue(long c, long f, long p)
     {
-        this.carbvalue += value;
-        Toast.makeText(getActivity(), "working", Toast.LENGTH_SHORT).show();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        test = database.getReference("values/adjustedcarbs");
+        test.setValue(carbvalue + c);
+
+        test = database.getReference("values/adjustedfats");
+        test.setValue(fatsvalue + f);
+
+        test = database.getReference("values/adjustedproteins");
+        test.setValue(proteinsvalue + p);
 
     }
 
