@@ -135,7 +135,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:text="Here we can help you figure out your recommended macros based on your weight, height and goal. Insert height, weight and your goal below. "
+        android:text="@string/SuggestionsMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

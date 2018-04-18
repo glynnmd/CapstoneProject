@@ -12,4 +12,9 @@
     <string name="suggestions">Suggestions</string>
     <string name="save_meals">Save Meals</string>
     <string name="title_activity_food">Food</string>
+    <string name="fats">Fats:</string>
+    <string name="proteins">Proteins:</string>
+    <string name="carbs">Carbs:</string>
+    <string name="grams"> grams</string>
+    <string name="SuggestionsMessage">Here we can help you figure out your recommended macros based on your weight, height and goal. Insert height, weight, activity amount and your goal below.</string>
 </resources>

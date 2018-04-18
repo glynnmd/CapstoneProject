@@ -32,30 +32,37 @@ public class Savedmeals extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_savedmeals);
         final LinearLayout layout = (LinearLayout) findViewById(R.id.inserttext);
-        final EditText mealname = (EditText) findViewById(R.id.mealname);
-        final EditText savedcarbs = (EditText) findViewById(R.id.savedcarbs);
-        final EditText savedfats = (EditText) findViewById(R.id.savedfats);
-        final EditText savedproteins = (EditText) findViewById(R.id.savedproteins);
+
+
         Button layoutbutton = (Button) findViewById(R.id.savedmealsubmit);
         layoutbutton.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
+                EditText mealname = (EditText) findViewById(R.id.mealname);
+                EditText savedcarbs = (EditText) findViewById(R.id.savedcarbs);
+                EditText savedfats = (EditText) findViewById(R.id.savedfats);
+                EditText savedproteins = (EditText) findViewById(R.id.savedproteins);
+
+
                 if((mealname.getText().length() >= 1 && savedcarbs.getText().length() >= 1
                         && savedfats.getText().length() >= 1 && savedproteins.getText().length() >= 1)) {
                     database = FirebaseDatabase.getInstance();
+                    long savc = Long.parseLong(savedcarbs.getText().toString());
+                    long savf = Long.parseLong(savedfats.getText().toString());
+                    long savp = Long.parseLong(savedproteins.getText().toString());
 
                     DatabaseReference test = database.getReference("food/" + mealname.getText().toString());
                     test.setValue(mealname.getText().toString());
 
                     test = database.getReference("food/" + mealname.getText().toString() + "/carbs");
-                    test.setValue(savedcarbs.getText().toString());
+                    test.setValue(savc);
 
                     test = database.getReference("food/" + mealname.getText().toString() + "/fats");
-                    test.setValue(savedfats.getText().toString());
+                    test.setValue(savf);
 
                     test = database.getReference("food/" + mealname.getText().toString() + "/proteins");
-                    test.setValue(savedproteins.getText().toString());
+                    test.setValue(savp);
 
                     Context context = getApplicationContext();
                     String toaststring = "Submitted!";

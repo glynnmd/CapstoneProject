@@ -54,6 +54,15 @@ public class Info {
 
     }
 
+    public Info(String s, long c, long f, long p)
+    {
+        foodcarbs = c;
+        foodfats = f;
+        foodproteins = p;
+        name = s;
+
+    }
+
     public String toString()
     {
         return "" + name + " ..." + foodcarbs + "   " + foodfats;

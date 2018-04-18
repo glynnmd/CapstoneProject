@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="90dp"
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal">
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -20,31 +21,118 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:id="@+id/Filler"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/carbs"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fats"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/proteins"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/carbs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/fats"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/proteins"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grams"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grams"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grams"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grams"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <TableRow
+        android:id="@+id/hr1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444">
+
+    </TableRow>
+
 </LinearLayout>
