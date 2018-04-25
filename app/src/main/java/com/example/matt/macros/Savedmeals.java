@@ -7,7 +7,6 @@ package com.example.matt.macros;
         import android.support.annotation.NonNull;
         import android.support.design.widget.BottomNavigationView;
         import android.support.v7.app.AppCompatActivity;
-        import android.support.v7.widget.Toolbar;
         import android.view.Menu;
         import android.view.MenuItem;
         import android.view.View;
@@ -24,9 +23,7 @@ package com.example.matt.macros;
 
 public class Savedmeals extends AppCompatActivity {
 
-    ArrayList<String> createdText = new ArrayList<String>();
     FirebaseDatabase database;
-    DatabaseReference test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

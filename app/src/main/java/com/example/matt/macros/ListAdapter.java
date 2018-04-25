@@ -1,14 +1,10 @@
 package com.example.matt.macros;
 
-import android.app.LauncherActivity;
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.view.View;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 

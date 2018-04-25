@@ -5,10 +5,8 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -17,7 +15,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
 import java.util.Map;
 
 
@@ -50,34 +47,40 @@ public class ManualFoodFragment extends android.support.v4.app.Fragment {
                 EditText carbs = (EditText) getView().findViewById(R.id.mealcarbs);
                 EditText fats = (EditText) getView().findViewById(R.id.mealfats);
                 EditText proteins = (EditText) getView().findViewById(R.id.mealproteins);
-
-                carbvalue = Integer.parseInt(carbs.getText().toString());
-                fatsvalue = Integer.parseInt(fats.getText().toString());
-                proteinsvalue = Integer.parseInt(proteins.getText().toString());
-
-
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
-                test = database.getReference().child("values");
-                test.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        Map<Long, Long> data = (Map<Long, Long>) dataSnapshot.getValue();
-                        c = data.get("adjustedcarbs");
-                        f = data.get("adjustedfats");
-                        p = data.get("adjustedproteins");
-                        setCarbvalue(c, f, p);
+                if(carbs.length() > 0 && fats.length() > 0 && proteins.length() > 0) {
+                    carbvalue = Integer.parseInt(carbs.getText().toString());
+                    fatsvalue = Integer.parseInt(fats.getText().toString());
+                    proteinsvalue = Integer.parseInt(proteins.getText().toString());
 
 
-                    }
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    test = database.getReference().child("values");
+                    test.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            Map<Long, Long> data = (Map<Long, Long>) dataSnapshot.getValue();
+                            c = data.get("adjustedcarbs");
+                            f = data.get("adjustedfats");
+                            p = data.get("adjustedproteins");
+                            setCarbvalue(c, f, p);
 
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
 
-                    }
-                });
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
 
 
-                Toast.makeText(getActivity(), "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Submitted!", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Toast.makeText(getActivity(), "Complete all fields!", Toast.LENGTH_SHORT).show();
+
+                }
 
             }
         });
