@@ -50,10 +50,10 @@ May 5, 2018
 - [x] Ability to allow the user to insert specific values based on the meals they eat, that will calculate how many macros have been consumed during the day and how many macros are left, based on their goal.
 - [x] Ability to save specific meals for future use based on a given name and macro numbers.
 - [x] Ability to access saved meals. 
-- [ ] --
-- [ ] --
-- [ ] --
-- [ ] --
+- [ ] Ability to recommend types of food to eat based on their diet.
+- [ ] Ability to change the language of the app.
+- [ ] An option that shows the macros of specific foods. Instead of the user having to google how many carbs, fats and
+     proteins,for example, a banana has, they’ll be able to use the accessible options provided.
 
 
 ## Conclusions
