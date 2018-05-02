@@ -14,14 +14,8 @@
 </br>
 </br>
 <p align="center"> <b>Table of Contents</b></p>
-</br>
 <b>Introduction and Project Overview</br></b>
-</br>
-<b>Design, Development and Test</b>
-</br>
-<b>Results</b>
-</br>
-<b>Conclusionsw</b>
-</br>
-<b>References</b>
-</br>
+<b>Design, Development and Test</br></b>
+<b>Results</br></b>
+<b>Conclusionsw</br></b>
+<b>References</br></b>
