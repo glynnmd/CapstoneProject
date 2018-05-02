@@ -10,3 +10,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp; Currently, the problem that lies within apps that help users keep track of macros, is the lack of user friendliness. Each app, does a good job highlighting certain aspects of what the app should include; however, not one has perfected every aspect of the app that will allow ease of use for the user. The goal of this project is to provide the user with the most ergonomic macros app possible.
 
 
+</br>
+</br>
+</br>
+<p align="center"> <b>Table of Contents</b></p>
+</br>
+<b>Introduction and Project Overview</b>
+</br>
+<b>Design, Development and Test</b>
+</br>
+<b>Results</b>
+</br>
+<b>Conclusionsw</b>
+</br>
+<b>References</b>
+</br>
