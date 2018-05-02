@@ -32,6 +32,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;    The database keeps track of all information for the user, including macro goals, daily macros and saved meals. 
 
 ![Database Photo](https://github.com/glynnmd/CapstoneProject/blob/master/Database.png)
+**figure 1**
+
+&nbsp;&nbsp;&nbsp;&nbsp; 
 
 ### Results
 &nbsp;&nbsp;&nbsp;&nbsp; Hello
