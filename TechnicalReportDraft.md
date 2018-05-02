@@ -1,6 +1,6 @@
 # Matts Macros
-<p align="center"> <b>Matthew Glynn</b></p>
-<p align="center"> <b>May 5, 2018</b></p>
+## Matthew Glynn
+## May 5, 2018
 
 
 </br>
