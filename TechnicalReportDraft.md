@@ -47,9 +47,9 @@
 
 
 ### Conclusions
-&nbsp;&nbsp;&nbsp;&nbsp; Hello
+&nbsp;&nbsp;&nbsp;&nbsp; This is where the conclusion goes :D
 
 
 ### References
-&nbsp;&nbsp;&nbsp;&nbsp; Hello 
+&nbsp;&nbsp;&nbsp;&nbsp; YouTube & StackOverflow, ALL DAY. 
 
