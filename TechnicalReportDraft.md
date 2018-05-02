@@ -8,15 +8,10 @@
 
 <br></br>
 ### Table of Contents
-<br></br>
 #### Introduction
-<br></br>
 #### Design, Development and Test
-<br></br>
 #### Results
-<br></br>
 #### Conclusions
-<br></br>
 #### References
 
 <br></br>
