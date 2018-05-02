@@ -18,6 +18,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; What are macronutrients, otherwise known as macros? Macronutrients are the largest class of nutrients the body requires and is made up of proteins, carbohydrates, and fats. These three factors make up calories, per gram of protein and carbohydrates make up 4 calories and per gram of fat makes up 9 calories. The amounts and ratio of macronutrients a person need vary depending on age, gender, lifestyle and health goals. It is a lot easier for an individual to achieve goals by keeping track of their macros rather than calories as a whole.  
 
 &nbsp;&nbsp;&nbsp;&nbsp; Currently, there are plenty of macros apps on the market that help individuals keep track of daily macros. However, it's rare to find an app that utilizes each feature to its full potential making it less user friendly. "Matts Macros" is an android app that provides the essential features for an individual to keep track of daily macros, along with making them user friendly. Features in this app include:
+
 &nbsp;&nbsp;&nbsp;&nbsp; •	Visual display of current macro goals and remaining numbers for the day.   
 &nbsp;&nbsp;&nbsp;&nbsp; •	Ability to calculate recommended macros based on health goals (gain weight, lose weight, maintain weight).   
 &nbsp;&nbsp;&nbsp;&nbsp; •	Ability to allow the user to insert specific values based on the meals they eat, that will calculate how many macros  
