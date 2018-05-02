@@ -10,6 +10,7 @@ May 5, 2018
 ## Table of Contents
 - [Introduction and Overview](#introduction-and-product-overview)
 - [Development](#design-development-and-test)
+     - [Test](#test)
 - [Result](#results)
 - [Conclusions](#conclusions)
 - [References](#references)
@@ -35,6 +36,7 @@ May 5, 2018
 
 **figure 1**
 
+### Test
 &nbsp;&nbsp;&nbsp;&nbsp;    Manual testing was done on the app. Several individuals were asked to manually test the app. First, the testers were asked to simply use the app as a common user would. This gave me insight on if users were able to understand the purpose of the app and how to use it. Next, they were asked to simple "break the app." Having serveral individials use the app and trying to find errors and exploits, allow me to know that my app wouldn't unexpectedly shut down, due to some error in the code. 
 
 
