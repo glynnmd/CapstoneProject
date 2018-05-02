@@ -11,8 +11,8 @@
 
 </br>
 </br>
-# Table of Contents
-## Introduction and Project Overview
+<p align="center"> <b>Table of Contents</b></p>
+<b>Introduction</br></b>
 </br>
 <b>Design, Development and Test</br></b>
 </br>
@@ -28,4 +28,5 @@
 <p align="center"> <b>Introduction and Product Overview</b></p>
 &nbsp;&nbsp;&nbsp;&nbsp; What are macronutrients, otherwise known as macros? Macronutrients are the largest class of nutrients the body requires and is made up of protein, carbohydrates, and fats. These three factors make up calories, per gram of protein and carbohydrates make up 4 calories and per gram of fat makes up 9 calories. The amounts and ratio of macronutrients a person need vary depending on age, gender, lifestyle and health goals. 
 <br></br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Hello
+&nbsp;&nbsp;&nbsp;&nbsp; Hello
+# hello
