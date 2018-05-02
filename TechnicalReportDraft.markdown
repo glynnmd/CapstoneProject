@@ -1,1 +1,1 @@
-<p align="center"> **Matts Macros** </p>
+<p align="center"> <b>Matts Macros</b> </p>
