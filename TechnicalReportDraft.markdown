@@ -15,7 +15,11 @@
 </br>
 <p align="center"> <b>Table of Contents</b></p>
 <b>Introduction and Project Overview</br></b>
+</br>
 <b>Design, Development and Test</br></b>
+</br>
 <b>Results</br></b>
-<b>Conclusionsw</br></b>
+</br>
+<b>Conclusions</br></b>
+</br>
 <b>References</br></b>
