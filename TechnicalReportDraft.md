@@ -20,12 +20,11 @@ May 5, 2018
 
 &nbsp;&nbsp;&nbsp;&nbsp; Currently, there are plenty of macros apps on the market that help individuals keep track of daily macros. However, it's rare to find an app that utilizes each feature to its full potential making it less user friendly. "Matts Macros" is an android app that provides the essential features for an individual to keep track of daily macros, along with making them user friendly. Features in this app include:
 
-&nbsp;&nbsp;&nbsp;&nbsp; •	Visual display of current macro goals and remaining numbers for the day.   
-&nbsp;&nbsp;&nbsp;&nbsp; •	Ability to calculate recommended macros based on health goals (gain weight, lose weight, maintain weight).   
-&nbsp;&nbsp;&nbsp;&nbsp; •	Ability to allow the user to insert specific values based on the meals they eat, that will calculate how many macros  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  have been consumed during the day and how many macros are left, based on their goal.   
-&nbsp;&nbsp;&nbsp;&nbsp; •	Ability to save specific meals for future use based on a given name and macro numbers.  
-&nbsp;&nbsp;&nbsp;&nbsp; •	Ability to access saved meals. 
+- Visual display of current macro goals and remaining numbers for the day.   
+- Ability to calculate recommended macros based on health goals (gain weight, lose weight, maintain weight).   
+- Ability to allow the user to insert specific values based on the meals they eat, that will calculate how many macros have been consumed during the day and how many macros are left, based on their goal.   
+- Ability to save specific meals for future use based on a given name and macro numbers.  
+- Ability to access saved meals. 
 
 ## Design, Development and Test
 &nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The application is composed of four activities.
