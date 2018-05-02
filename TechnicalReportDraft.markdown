@@ -13,15 +13,14 @@
 </br>
 <p align="center"> <b>Table of Contents</b></p>
 <b>Introduction and Project Overview</b>
-<p align="right"> <b>Page #</b></p>
 </br>
-<b>Design, Development and Test<p align="right"> <b>Page #</b></p></b>
+<b>Design, Development and Test</b>
 </br>
-<b>Results<p align="right"> <b>Page #</b></p></b>
+<b>Results</b>
 </br>
-<b>Conclusions<p align="right"> <b>Page #</b></p></b>
+<b>Conclusions</b>
 </br>
-<b>References<p align="right"> <b>Page #</b></p></b>
+<b>References</b>
 
 
 </br>
