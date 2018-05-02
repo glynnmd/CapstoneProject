@@ -27,9 +27,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp; •	Ability to access saved meals. 
 
 ### Design, Development and Test
-&nbsp;&nbsp;&nbsp;&nbsp; Hello
+&nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The application is composed of four main activities.
+&nbsp;&nbsp;&nbsp;&nbsp; The database keeps track of all information for the user, including macro goals, daily macros and saved meals. 
 
-
+![](Untitled.png)
 
 ### Results
 &nbsp;&nbsp;&nbsp;&nbsp; Hello
