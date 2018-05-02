@@ -9,7 +9,7 @@ May 5, 2018
 
 ## Table of Contents
 - [Introduction and Overview](#introduction-and-product-overview)
-- [Development](#design-development-and-testing)
+- [Development](#design-development-and-test)
 - [Result](#result)
 - [Conclusions](#conclusions)
 - [References](#references)
