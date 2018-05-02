@@ -13,8 +13,8 @@
 </br>
 </br>
 </br>
-<p align="center"> <b>Table of Contents</b></p>
-<b>Introduction and Project Overview</br></b>
+<p align="right"> <b>Table of Contents</b></p>
+<b>Introduction and Project Overview</b>
 </br>
 <b>Design, Development and Test</br></b>
 </br>
