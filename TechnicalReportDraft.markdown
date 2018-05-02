@@ -13,7 +13,7 @@
 </br>
 </br>
 </br>
-<p align="center"> <b>Table of Contents</p>
+<p align="center"> <b>Table of Contents</b></p>
 <b>Introduction and Project Overview </b>
 <p align="right"> <b>Page 1</p>
 </br>
