@@ -57,9 +57,10 @@ May 5, 2018
 
 
 ## Conclusions
-&nbsp;&nbsp;&nbsp;&nbsp; This is where the conclusion goes :D
+&nbsp;&nbsp;&nbsp;&nbsp; Overall, I feel like the project could use a little more work. If I had another week to sit down and finish up some features I wanted to have I would consider the project completely done. I believe that if I would've sat down and learned the "ins and outs" of Android Studio and Firebase, prior to writing code, the project would've went a little more smooth.
 
 
 ## References
-&nbsp;&nbsp;&nbsp;&nbsp; YouTube & StackOverflow, ALL DAY. 
 
+Android Studio
+Firebase
