@@ -11,8 +11,8 @@
 
 </br>
 </br>
-<p align="center"> <b>Table of Contents</b></p>
-<b>Introduction and Project Overview</br></b>
+# Table of Contents
+## Introduction and Project Overview
 </br>
 <b>Design, Development and Test</br></b>
 </br>
