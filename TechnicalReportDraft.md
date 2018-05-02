@@ -8,7 +8,7 @@ May 5, 2018
 
 
 ## Table of Contents
-- [Introduction and Overview](#introduction-and-project-overview)
+- [Introduction and Overview](#introduction-and-product-overview)
 - [Development](#design-development-and-testing)
 - [Result](#result)
 - [Conclusions](#conclusions)
