@@ -45,6 +45,16 @@ May 5, 2018
 
 &nbsp;&nbsp;&nbsp;&nbsp; As for the applications features, it is composed of four activities. The main activity gives the user a visual representation of the macro goals they have set in place and a progress bar that gives them an idea of their remaining macros. The second activity allows the user to obtain their macro goals based on their age, height, weight, lifestyle and goal. The algorithm used to calculate the individuals macros is based on the Katch-McArdle equation, which is considered more accurate than other common formulas. The thrid activity allows the user to save food for future use. Values are inserted based on a given name and corresponding macro values. The final activity consist of two tabs. The first tab allows users to insert values that will increase their daily value; this will change the display on the main activity, increasing the progress bars. Furthermore, the second tab in the activity gives the user a list of saved meals that was inserted into the database. 
 
+- [x] Visual display of current macro goals and remaining numbers for the day.
+- [x] Ability to calculate recommended macros based on health goals (gain weight, lose weight, maintain weight). 
+- [x] Ability to allow the user to insert specific values based on the meals they eat, that will calculate how many macros have been consumed during the day and how many macros are left, based on their goal.
+- [x] Ability to save specific meals for future use based on a given name and macro numbers.
+- [x] Ability to access saved meals. 
+- [ ] --
+- [ ] --
+- [ ] --
+- [ ] --
+
 
 ## Conclusions
 &nbsp;&nbsp;&nbsp;&nbsp; This is where the conclusion goes :D
