@@ -22,7 +22,7 @@ May 5, 2018
 &nbsp;&nbsp;&nbsp;&nbsp; •	Visual display of current macro goals and remaining numbers for the day.   
 &nbsp;&nbsp;&nbsp;&nbsp; •	Ability to calculate recommended macros based on health goals (gain weight, lose weight, maintain weight).   
 &nbsp;&nbsp;&nbsp;&nbsp; •	Ability to allow the user to insert specific values based on the meals they eat, that will calculate how many macros  
-&nbsp;&nbsp;&nbsp;&nbsp; have been consumed during the day and how many macros are left, based on their goal.   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  have been consumed during the day and how many macros are left, based on their goal.   
 &nbsp;&nbsp;&nbsp;&nbsp; •	Ability to save specific meals for future use based on a given name and macro numbers.  
 &nbsp;&nbsp;&nbsp;&nbsp; •	Ability to access saved meals. 
 
