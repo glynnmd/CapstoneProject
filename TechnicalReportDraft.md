@@ -30,7 +30,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The application is composed of four main activities.
 &nbsp;&nbsp;&nbsp;&nbsp;    The database keeps track of all information for the user, including macro goals, daily macros and saved meals. 
 
-![Database Photo](https://github.com/glynnmd/CapstoneProject/blob/master/database.png)
+![Database Photo](https://github.com/glynnmd/CapstoneProject/blob/master/Database.png)
 
 ### Results
 &nbsp;&nbsp;&nbsp;&nbsp; Hello
