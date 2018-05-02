@@ -27,15 +27,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp; •	Ability to access saved meals. 
 
 ### Design, Development and Test
-&nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The application is composed of four main activities.
+&nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The application is composed of four activities.
 
-&nbsp;&nbsp;&nbsp;&nbsp;    The database keeps track of all information for the user, including macro goals, daily macros and saved meals. An example of an individuals information that is store in the databse can be seen below in figure 1. 
+&nbsp;&nbsp;&nbsp;&nbsp;    The database keeps track of all information for the user, including macro goals, daily macros and saved meals. The application saves information into the datbase and also reads information from the database. An example of an individuals information that is store in the databse can be seen below in figure 1. 
 
 ![Database Photo](https://github.com/glynnmd/CapstoneProject/blob/master/Database.png)
 
 **figure 1**
 
-&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; As for the application, previously mentioned, it is composed of four activities. The main activity gives the user a visual representation of the macro goals they have set in place and a progress bar that gives them an idea of their remaining macros. The second activity allows the user to obtain their macro goals based on their age, height, weight, lifestyle and goal. The algorithm used to calculate the individuals macros is based on the Katch-McArdle equation, which is considered more accurate than other common formulas. The thrid activity allows the user to save food for future use. Values are inserted based on a given name and corresponding macro values. The final activity consist of two tabs. The first tab allows users to insert values that will increase their daily value; this will change the display on the main activity, increasing the progress bars. Furthermore, the second tab in the activity gives the user a list of saved meals that was inserted into the database. 
 
 ### Results
 &nbsp;&nbsp;&nbsp;&nbsp; Hello
