@@ -20,3 +20,14 @@ up 9 calories. The amounts and ratio of macronutrients a person need vary depend
 goals. It is a lot easier for an individual to achieve goals by keeping track of their macros rather than calories as a
 whole. The	goal	of	this	project	is	to	provide	the	user	with	the	most	ergonomic	macros	app	possible, that will help
 them achieve realistic goals and keep track of those goals. 
+
+### Screenshots
+
+
+### User Instructions
+
+### Developer Instructions
+
+### Resources
+
+
