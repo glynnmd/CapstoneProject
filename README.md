@@ -1,17 +1,17 @@
-Project Name
-Project High-level description
-Screenshots
-User instructions
-How to try your project (maybe access a demo version if that exists)
-How to run your own copy
-Developer instructions
-How to set up a development environment
-How to run your tests
-How to run your quality control (linter, formatter) if you have any
-How to contribute (if your project is actually public)
-Resources
-Link to proposal
-Link to final technical report
+- Project Name
+- Project High-level description
+- Screenshots
+- User instructions
+  - How to try your project (maybe access a demo version if that exists)
+  - How to run your own copy
+- Developer instructions
+  - How to set up a development environment
+  - How to run your tests
+  - How to run your quality control (linter, formatter) if you have any
+  - How to contribute (if your project is actually public)
+- Resources
+  - Link to proposal
+  - Link to final technical report
 
 ## Matts Macros
 Macronutrients are the largest class of nutrients the body requires and is made up of proteins, carbohydrates, and fats.
