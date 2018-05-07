@@ -63,8 +63,9 @@ For reference, other popular macros apps were examined and pointers were taken t
 
 ### 
 ### Test
-&nbsp;&nbsp;&nbsp;&nbsp; During the beginning stages, I personally did some manual tests to make sure that I was designing the application correctly. 
-&nbsp;&nbsp;&nbsp;&nbsp; Manual testing was done on the app. Several individuals were asked to manually test the app. First, the testers were asked to simply use the app as a common user would. This gave me insight on if users were able to understand the purpose of the app and how to use it. Next, they were asked to simple "break the app." Having serveral individials use the app and trying to find errors and exploits, allowed me to know that my app wouldn't unexpectedly shut down, due to some error in the code. 
+&nbsp;&nbsp;&nbsp;&nbsp; During the beginning stages, I personally did some manual tests to make sure that I was designing the application correctly. The testing was done manually because the logcat in Android Studio provided error messages that would allow me to know exactly where the problem was at any given moment of using the app.
+
+&nbsp;&nbsp;&nbsp;&nbsp; After most of the features were implemented, several individuals were asked to manually test the app. First, the testers were asked to simply use the app as a common user would. This gave me insight on if users were able to understand the purpose of the app and how to use it. Next, they were asked to simple "break the app." Having serveral individials use the app and trying to find errors and exploits, allowed me to know that my app wouldn't unexpectedly shut down, due to some error in the code. 
 
 
 ## Results
@@ -110,4 +111,6 @@ For reference, other popular macros apps were examined and pointers were taken t
 [3] [Coding With Mitch](https://www.youtube.com/channel/UCoNZZLhPuuRteu02rh7bzsw)
 
 [4] [Android Design](https://developer.android.com/design/)
+
+[5] [Katch-McArdle](http://www.burnthefatinnercircle.com/members/Katch-McArdle-Calorie-Calculator-For-Men-And-Women.cfm)
 
