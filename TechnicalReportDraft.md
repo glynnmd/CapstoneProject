@@ -11,6 +11,9 @@ Macros, carbs, fats, proteins, app, features
 
 ## Table of Contents
 - [Introduction and Overview](#introduction-and-product-overview)
+     - [Intro](#intro)
+     - [Goal](#goal)
+     - [Problems and Risks](#problems-and-risks)
 - [Development](#design-development-and-test)
      - [Test](#test)
      - [Design](#design)
@@ -44,18 +47,21 @@ Macros, carbs, fats, proteins, app, features
 ## Design, Development and Test
 
 ### Design
-&nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The database keeps track of all information for the user, including macro goals, daily macros and saved meals. The application saves information into the datbase and also reads information from the database. An example of an individuals information that is store in the databse can be seen below in figure 1. 
+&nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The database keeps track of all information for the user, including macro goals, daily macros and saved meals. The application saves information into the datbase and also reads information from the database. An example of an individuals information that is store in the databse can be seen below.
 
 ![Database Photo](https://github.com/glynnmd/CapstoneProject/blob/master/Database.png)
 
-**figure 1**
 
 ### UI Design
 &nbsp;&nbsp;&nbsp;&nbsp; Most of the applications design was focused on the ease of use for the user. Overall, the app uses a linear views, view pages and a navigation bar. The linear views allowed for items to be organized in a vertical/horizontal manner, to provide the user with a visually pleasing experience. The view pagers allowed the user to switch between releavant activities with ease. The navigation bar combined both the visual aspect and the ease of use. It provided a way for the user to see which activity they were in and an easy way of navigation between activites. 
 
-For reference, other popular macros apps were examined and pointers were taken to see how exactly a functional app sound look and work. Once of the biggest challenges was deciding a color scheme that is unique and pleasing to look at. Several temeplate schemes were considered, until ultimately a custom scheme was design. The design consists of white, light blue and black. Both the white and light blue look good mixed with black, because they're easy to examine the features/text of the app. 
+For reference, other popular macros apps were examined and pointers were taken to see how exactly a functional app sound look and work. Once of the biggest challenges was deciding a color scheme that is unique and pleasing to look at. Several temeplate schemes were considered, until ultimately a custom scheme was design. The design consists of white, light blue and black. Both the white and light blue look good mixed with black, because they're easy to examine the features/text of the app. An example of the scheme can be found below. 
+
+<a href="url"><img src="https://github.com/glynnmd/CapstoneProject/blob/master/HomeScreen.png" align="center" height="500" width="280" ></a> 
 
 
+
+### 
 ### Test
 &nbsp;&nbsp;&nbsp;&nbsp; During the beginning stages, I personally did some manual tests to make sure that I was designing the application correctly. 
 &nbsp;&nbsp;&nbsp;&nbsp; Manual testing was done on the app. Several individuals were asked to manually test the app. First, the testers were asked to simply use the app as a common user would. This gave me insight on if users were able to understand the purpose of the app and how to use it. Next, they were asked to simple "break the app." Having serveral individials use the app and trying to find errors and exploits, allowed me to know that my app wouldn't unexpectedly shut down, due to some error in the code. 
@@ -64,7 +70,20 @@ For reference, other popular macros apps were examined and pointers were taken t
 ## Results
 &nbsp;&nbsp;&nbsp;&nbsp; Initially the project had much more features; however, more problems occured than expected. One major problem included the lack of knowledge in Android Studio. The first few weeks were spent learning the basics of Android Studio. After that, the biggest issue was writing to and reading from the database. The documentation for Firebase was hard to read and not informative to an individual who has never worked with Firebase before. Once all the components that wrote to the database were completed, the next challenge was to read that information and display it in the app. The lack of knowledge in Android Studio and writing from the database became an issue together. More advanced knowledge of Android Studio was needed to display the information; however, there were a lot of issues with reading from the database. Firebase has multiple ways of reading from the database, but doesn't provide information on how to iterate through the information. After hours and hours of watching YouTube videos, the issues started to die out and the app began hitting its final stages. 
 
-&nbsp;&nbsp;&nbsp;&nbsp; As for the applications features, it is composed of four activities. The main activity gives the user a visual representation of the macro goals they have set in place and a progress bar that gives them an idea of their remaining macros. The second activity allows the user to obtain their macro goals based on their age, height, weight, lifestyle and goal. The algorithm used to calculate the individuals macros is based on the Katch-McArdle equation, which is considered more accurate than other common formulas. The thrid activity allows the user to save food for future use. Values are inserted based on a given name and corresponding macro values. The final activity consist of two tabs. The first tab allows users to insert values that will increase their daily value; this will change the display on the main activity, increasing the progress bars. Furthermore, the second tab in the activity gives the user a list of saved meals that was inserted into the database. 
+&nbsp;&nbsp;&nbsp;&nbsp; As for the applications features, it is composed of four activities. The main activity gives the user a visual representation of the macro goals they have set in place and a progress bar that gives them an idea of their remaining macros. The second activity allows the user to obtain their macro goals based on their age, height, weight, lifestyle and goal. The algorithm used to calculate the individuals macros is based on the Katch-McArdle equation, which is considered more accurate than other common formulas. Below are screenshots of the suggestions activity and the home screen and how they communicate.
+
+<a href="url"><img src="https://github.com/glynnmd/CapstoneProject/blob/master/Suggestions.png" align="center" height="500" width="350" ></a>
+<a href="url"><img src="https://github.com/glynnmd/CapstoneProject/blob/master/HomeScreen2.png" align="center" height="500" width="350" ></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The thrid activity allows the user to save food for future use. Values are inserted based on a given name and corresponding macro values. The final activity consist of two tabs. The first tab allows users to insert values that will increase their daily value; this will change the display on the main activity, increasing the progress bars. Furthermore, the second tab in the activity gives the user a list of saved meals that was inserted into the database. Found below are examples of each activity and how they communicate among one onther. 
+
+<a href="url"><img src="https://github.com/glynnmd/CapstoneProject/blob/master/SavedMeals.png" align="center" height="500" width="280" ></a>
+<a href="url"><img src="https://github.com/glynnmd/CapstoneProject/blob/master/ManualEntry.png" align="center" height="500" width="280" ></a>
+<a href="url"><img src="https://github.com/glynnmd/CapstoneProject/blob/master/Savemeals.png" align="center" height="500" width="280" ></a>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp; The final product included all of the neccesary functions needed for a propoer macros app; however, there were a few features that I wish could have been implemented to make the app more user friendly, but were not able to be implemented due to the lack of time. Below are all of the feature that were originally planned and which ones made it into the final product. 
 
 - [x] Visual display of current macro goals and remaining numbers for the day.
 - [x] Ability to calculate recommended macros based on health goals (gain weight, lose weight, maintain weight). 
@@ -75,10 +94,11 @@ For reference, other popular macros apps were examined and pointers were taken t
 - [ ] Ability to change the language of the app.
 - [ ] An option that shows the macros of specific foods. Instead of the user having to google how many carbs, fats and
      proteins. 
+- [ ] Macros reset daily, automatically
 
 
 ## Conclusions
-&nbsp;&nbsp;&nbsp;&nbsp; Overall, I feel like the project could use a little more work. If I had another week to sit down and finish up some features I wanted to have I would consider the project completely done. I believe that if I would've sat down and learned the "ins and outs" of Android Studio and Firebase, prior to writing code, the project would've went a little more smooth.
+&nbsp;&nbsp;&nbsp;&nbsp; Overall, I feel like the project could use a little more work. If I had another week to sit down and finish up some features I wanted to have I would consider the project completely done. I believe that if I would've sat down and learned the "ins and outs" of Android Studio and Firebase, prior to writing code, the project would've went a little more smooth. If I have time in the future I would love to actually work on this more and maybe have an app that could be put on the market. 
 
 
 ## References
