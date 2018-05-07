@@ -36,10 +36,10 @@ them achieve realistic goals and keep track of those goals.
 &nbsp;&nbsp;&nbsp;&nbsp; Currently, the only way to run the project requires you to download my entire repository and import directly into Android Studio. Which provides a simple way of achieving that, simply open Android Studio, select File > New > Import Project and then select Gradle build java. Once it is set up, you may install and run a digital version of an Android device or you may plug in an Android device directly. However, with the Android device you must access the settings, find the build number, tap seven times and activate developer settings, which will allow you to install the app on your device. 
 
 #### How to work the app
--First Activity: Displays the current goals for an individual and the daily progress. The goal is to reach your daily amount being over or under by too much. 
--Second Activity: This activity allows the user to save meals for future use based on a specific macros name and numbers. 
--Third Activity: This activity allows the user to enter in their weight, age, height, activity levels and their goal. It will generate recommended numbers based on the information entered and then transferred to the database, which will then be displayed in the main activity. 
--Fourth Activity: This activity consist of two tabs. The first tab allows the user to enter carbs, fats and proteins for a specific meal and will adjust their daily values, which will be displayed on the main activity. The second tab is a list display of the saved meals that are inserted in the second activity.
+- First Activity: Displays the current goals for an individual and the daily progress. The goal is to reach your daily amount being over or under by too much. 
+- Second Activity: This activity allows the user to save meals for future use based on a specific macros name and numbers. 
+- Third Activity: This activity allows the user to enter in their weight, age, height, activity levels and their goal. It will generate recommended numbers based on the information entered and then transferred to the database, which will then be displayed in the main activity. 
+- Fourth Activity: This activity consist of two tabs. The first tab allows the user to enter carbs, fats and proteins for a specific meal and will adjust their daily values, which will be displayed on the main activity. The second tab is a list display of the saved meals that are inserted in the second activity.
 
 ## Developer Instructions
 #### How to set up a development environment
