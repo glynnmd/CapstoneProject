@@ -4,8 +4,10 @@ Matthew Glynn
 May 5, 2018
 
 ## Abstract
-&nbsp;&nbsp;&nbsp;&nbsp; Currently, the problem that lies within apps that help users keep track of macros, is the lack of user friendliness. Each app, does a good job highlighting certain aspects of what the app should include; however, not one has perfected every aspect of the app that will allow ease of use for the user. The goal of this project is to provide the user with the most ergonomic macros app possible.
+&nbsp;&nbsp;&nbsp;&nbsp; Macros are nutrients that the body requires, including proteins, carbohydrates and fats. Counting macros is a way that an individual can keep track of what they're eating and help achieve a specific goal, such as losing weight, maintaining weight and gaining weight. Currently on the market are plently of macros app; however, while each app does a good job highlighting certain aspects of what the app should include, not one has perfected every aspect of the app that will allow ease of use for the user. The goal of this project is to provide the user with the most ergonomic macros app possible.
 
+#### Keywords 
+Macros, carbs, fats, proteins, app, features
 
 ## Table of Contents
 - [Introduction and Overview](#introduction-and-product-overview)
@@ -18,31 +20,43 @@ May 5, 2018
 
 
 ## Introduction and Product Overview
+
+### Intro
 &nbsp;&nbsp;&nbsp;&nbsp; What are macronutrients, otherwise known as macros? Macronutrients are the largest class of nutrients the body requires and is made up of proteins, carbohydrates, and fats. These three factors make up calories, per gram of protein and carbohydrates make up 4 calories and per gram of fat makes up 9 calories. The amounts and ratio of macronutrients a person need vary depending on age, gender, lifestyle and health goals. It is a lot easier for an individual to achieve goals by keeping track of their macros rather than calories as a whole.  
 
-&nbsp;&nbsp;&nbsp;&nbsp; Currently, there are plenty of macros apps on the market that help individuals keep track of daily macros. However, it's rare to find an app that utilizes each feature to its full potential making it less user friendly. "Matts Macros" is an android app that provides the essential features for an individual to keep track of daily macros, along with making them user friendly. Features in this app include:
 
+### Goal
+&nbsp;&nbsp;&nbsp;&nbsp; Currently, there are plenty of macros apps on the market that help individuals keep track of daily macros. However, it's rare to find an app that utilizes each feature to its full potential making it less user friendly. For an individual to design an app that can compete with big competeors is a great challenge. However, "Matts Macros" is an android app that provides the essential features for an individual to keep track of daily macros, along with making them user friendly. In hope that users will see the simplicity and user friendliness of the app is a much better choice that the alternative. The features within this app include:
 - Visual display of current macro goals and remaining numbers for the day.   
 - Ability to calculate recommended macros based on health goals (gain weight, lose weight, maintain weight).   
 - Ability to allow the user to insert specific values based on the meals they eat, that will calculate how many macros have been consumed during the day and how many macros are left, based on their goal.   
 - Ability to save specific meals for future use based on a given name and macro numbers.  
 - Ability to access saved meals. 
 
+### Problems and Risk 
+&nbsp;&nbsp;&nbsp;&nbsp; Throughout the production of the project a few issues were considered. One of the biggest issues was the lack of experience with Android Studio. Prior to the capstone course, I had zero experience with Android Studio and there was risk of learning how to use it and being able to produce a sufficient final project. As the app was being mad, that risk became less of an issue due to the fact that Android Studio is somewhat simplistic and more challenge activites had plently of online tutorials that could lead me in the right direction. 
+&nbsp;&nbsp;&nbsp;&nbsp; "Matts Macros" required a way for the app to save the users information for future use. This posed as an issue due to the lack of knowledge and experience with databases. The app needed an easy database management system that would allow communication between the app and the databse to be easy and efficient. During the production of "Matts Macros", an individual mentioned Firebase, a cloud-hosted database in which data is synced across all clients in realtime. After looking into it, it seemed like a great solution to a big problem. Adding Firebase to Android Studio wasn't an issue at all; however, using it became a bigger issue. There was a lot of conflict with communicating between the app and the database.  
+&nbsp;&nbsp;&nbsp;&nbsp; Writing to the database had minor issues, such as writing the right data types.  Occasional bugs would cause it to write a string type instead of a long type. Reading from the database took a lot of time away from the project. The biggest problem with writing from the database was accessing specific information, iterating through that information and then using that within the app. Each solution to a problem, lead to another problem that would take hours to resolve. After weeks of figuring out how to properly communicating between the two, the final product began to take form. Essentially, resolving all of my issues. 
+
+
 ## Design, Development and Test
 
 ### Design
-&nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The application is composed of four activities.
-
-&nbsp;&nbsp;&nbsp;&nbsp;    The database keeps track of all information for the user, including macro goals, daily macros and saved meals. The application saves information into the datbase and also reads information from the database. An example of an individuals information that is store in the databse can be seen below in figure 1. 
+&nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in realtime to every connected client. The database keeps track of all information for the user, including macro goals, daily macros and saved meals. The application saves information into the datbase and also reads information from the database. An example of an individuals information that is store in the databse can be seen below in figure 1. 
 
 ![Database Photo](https://github.com/glynnmd/CapstoneProject/blob/master/Database.png)
 
 **figure 1**
 
+### UI Design
+&nbsp;&nbsp;&nbsp;&nbsp; Most of the applications design was focused on the ease of use for the user. Overall, the app uses a linear views, view pages and a navigation bar. The linear views allowed for items to be organized in a vertical/horizontal manner, to provide the user with a visually pleasing experience. The view pagers allowed the user to switch between releavant activities with ease. The navigation bar combined both the visual aspect and the ease of use. It provided a way for the user to see which activity they were in and an easy way of navigation between activites. 
+
+For reference, other popular macros apps were examined and pointers were taken to see how exactly a functional app sound look and work. Once of the biggest challenges was deciding a color scheme that is unique and pleasing to look at. Several temeplate schemes were considered, until ultimately a custom scheme was design. The design consists of white, light blue and black. Both the white and light blue look good mixed with black, because they're easy to examine the features/text of the app. 
+
+
 ### Test
-&nbsp;&nbsp;&nbsp;&nbsp;    Manual testing was done on the app. Several individuals were asked to manually test the app. First, the testers were asked to simply use the app as a common user would. This gave me insight on if users were able to understand the purpose of the app and how to use it. Next, they were asked to simple "break the app." Having serveral individials use the app and trying to find errors and exploits, allow me to know that my app wouldn't unexpectedly shut down, due to some error in the code. 
-
-
+&nbsp;&nbsp;&nbsp;&nbsp; During the beginning stages, I personally did some manual tests to make sure that I was designing the application correctly. 
+&nbsp;&nbsp;&nbsp;&nbsp; Manual testing was done on the app. Several individuals were asked to manually test the app. First, the testers were asked to simply use the app as a common user would. This gave me insight on if users were able to understand the purpose of the app and how to use it. Next, they were asked to simple "break the app." Having serveral individials use the app and trying to find errors and exploits, allowed me to know that my app wouldn't unexpectedly shut down, due to some error in the code. 
 
 
 ## Results
@@ -58,7 +72,7 @@ May 5, 2018
 - [ ] Ability to recommend types of food to eat based on their diet.
 - [ ] Ability to change the language of the app.
 - [ ] An option that shows the macros of specific foods. Instead of the user having to google how many carbs, fats and
-     proteins,for example, a banana has, they’ll be able to use the accessible options provided.
+     proteins. 
 
 
 ## Conclusions
