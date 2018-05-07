@@ -15,8 +15,9 @@ Macros, carbs, fats, proteins, app, features
      - [Goal](#goal)
      - [Problems and Risks](#problems-and-risks)
 - [Development](#design-development-and-test)
-     - [Test](#test)
      - [Design](#design)
+     - [Development](#development)
+     - [Test](#test)
 - [Result](#results)
 - [Conclusions](#conclusions)
 - [References](#references)
@@ -60,8 +61,12 @@ For reference, other popular macros apps were examined and pointers were taken t
 <a href="url"><img src="https://github.com/glynnmd/CapstoneProject/blob/master/HomeScreen.png" align="center" height="500" width="280" ></a> 
 
 
+### Development
+&nbsp;&nbsp;&nbsp;&nbsp; Initially, the project started out slow. There was a lot of research done in the beginning to familarize myself with Android Studio. The "skateboard" prototype was completed within two weeks, which gave me plenty of time to learn a thing or two about Android Studio. The next process was to design the first two activities and communicate between them. Once simplistic layouts were produced and information was transfering between activities, I could really start designing the other activities. 
 
-### 
+&nbsp;&nbsp;&nbsp;&nbsp; Production started increasing on the project, because I became more accustomed to Android Studio. Eventaully the layouts of the four main activities were completed and the next stage was to use the database within the app. Prodution hit a huge hault due to complicating errors with reading from the database. One of the biggest problems was accesses through a specific section of information and iterating through that information. Each section had an additional subsection that needed to be iterated through, increasing the complexity of the problem. However, once that problem was concluded, the project was near completion. The final stage included cleaning up code and finalizing the design of the layouts. 
+
+
 ### Test
 &nbsp;&nbsp;&nbsp;&nbsp; During the beginning stages, I personally did some manual tests to make sure that I was designing the application correctly. The testing was done manually because the logcat in Android Studio provided error messages that would allow me to know exactly where the problem was at any given moment of using the app.
 
