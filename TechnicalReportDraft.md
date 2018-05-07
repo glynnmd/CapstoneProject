@@ -6,6 +6,8 @@ May 5, 2018
 ## Abstract
 &nbsp;&nbsp;&nbsp;&nbsp; Macros are nutrients that the body requires, including proteins, carbohydrates and fats. Counting macros is a way that an individual can keep track of what they're eating and help achieve a specific goal, such as losing weight, maintaining weight and gaining weight. Currently on the market are plenty of macros app; however, while each app does a good job highlighting certain aspects of what the app should include, not one has perfected every aspect of the app that will allow ease of use for the user. The goal of this project is to provide the user with the most ergonomic macros app possible.
 
+&nbsp;&nbsp;&nbsp;&nbsp; Within this document is all the information needed to know about "Matts Macros." This document is broken up into several sections in order to provide an easy insight on the project. First is a brief overview of the project, the goal of the project and some of the risks involved. The next section provides information on the design of the app, the productivity though the 4 month period and the testing methods used to insure the app was properly running. Third, provides information and pictures of the final product and how it works. Finally, the conclusion summarizes the final outcome and the future plans for "Matts Macros."
+
 #### Keywords 
 Macros, carbs, fats, proteins, app, features
 
@@ -105,6 +107,8 @@ For reference, other popular macros apps were examined and pointers were taken t
 
 ## Conclusions
 &nbsp;&nbsp;&nbsp;&nbsp; Overall, I feel like the project could use a little more work. If I had another week to sit down and finish up some features I wanted to have, I would consider the project completely done. I believe that if I would've sat down and learned the "ins and outs" of Android Studio and Firebase, prior to writing code, the project would've gone a little more smoother. If I have time in the future, I would love to actually work on this more and maybe have an app that could be put on the market. 
+
+&nbsp;&nbsp;&nbsp;&nbsp; Along with learning how to use Android Studio and NoSQL, this project gave me an oppertunity to learn how to plan and execute a project within a given time frame. I believe this is how any job will be once I graduate. I was able to tackle a project on my own and I'm very satsfied with how much I produced. 
 
 
 ## References
