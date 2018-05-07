@@ -52,13 +52,15 @@ Macros, carbs, fats, proteins, app, features
 ### Design
 &nbsp;&nbsp;&nbsp;&nbsp; The design of the project consist of two components, the database and the Android application. The database is a cloud-hosted database on Firebase. Data is stored as JSON and synchronized in real time to every connected client. The database keeps track of all information for the user, including macro goals, daily macros and saved meals. The application saves information into the database and also reads information from the database. An example of an individuals information that is store in the database can be seen below.
 
+
 ![Database Photo](https://github.com/glynnmd/CapstoneProject/blob/master/Database.png)
 
 
 ### UI Design
+
 &nbsp;&nbsp;&nbsp;&nbsp; Most of the applications design was focused on the ease of use for the user. Overall, the app uses linear views, view pages and a navigation bar. The linear views allowed for items to be organized in a vertical/horizontal manner, to provide the user with a visually pleasing experience. The view pagers allowed the user to switch between relevant activities with ease. The navigation bar combined both the visual aspect and the ease of use. It provided a way for the user to see which activity they were in and an easy way of navigating between activities. 
 
-For reference, other popular macros apps were examined and pointers were taken to see how exactly a functional app sound look and work. Once of the biggest challenges was deciding a color scheme that is unique and pleasing to look at. Several template  schemes were considered, until ultimately a custom scheme was designed. The design consists of white, light blue and black. Both the white and light blue look good mixed with black, because they're easy to examine the features/text of the app. An example of the scheme can be found below. 
+&nbsp;&nbsp;&nbsp;&nbsp; For reference, other popular macros apps were examined and pointers were taken to see how exactly a functional app sound look and work. Once of the biggest challenges was deciding a color scheme that is unique and pleasing to look at. Several template  schemes were considered, until ultimately a custom scheme was designed. The design consists of white, light blue and black. Both the white and light blue look good mixed with black, because they're easy to examine the features/text of the app. An example of the scheme can be found below. 
 
 <a href="url"><img src="https://github.com/glynnmd/CapstoneProject/blob/master/HomeScreen.png" align="center" height="500" width="280" ></a> 
 
@@ -106,9 +108,12 @@ For reference, other popular macros apps were examined and pointers were taken t
 
 
 ## Conclusions
-&nbsp;&nbsp;&nbsp;&nbsp; Overall, I feel like the project could use a little more work. If I had another week to sit down and finish up some features I wanted to have, I would consider the project completely done. I believe that if I would've sat down and learned the "ins and outs" of Android Studio and Firebase, prior to writing code, the project would've gone a little more smoother. If I have time in the future, I would love to actually work on this more and maybe have an app that could be put on the market. 
 
-&nbsp;&nbsp;&nbsp;&nbsp; Along with learning how to use Android Studio and NoSQL, this project gave me an oppertunity to learn how to plan and execute a project within a given time frame. I believe this is how any job will be once I graduate. I was able to tackle a project on my own and I'm very satsfied with how much I produced. 
+&nbsp;&nbsp;&nbsp;&nbsp;      The goal of this project is to provide the user with the most ergonomic macros app possible. Although I didn't finish all of the features originally planned, I believe that the project has shown a lot of what I've learned and how I've overcame a lot of the difficulties that arose throughout the production of the app. 
+
+ &nbsp;&nbsp;&nbsp;&nbsp;    Overall, I feel like the project could use a little more work. If I had another week to sit down and finish up some features I wanted to have, I would consider the project completely done. I believe that if I would've sat down and learned the "ins and outs" of Android Studio and Firebase, prior to writing code, the project would've gone a little smoother. If I have time in the future, I would love to actually work on this more and maybe have an app that could be put on the market. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;     Along with learning how to use Android Studio and NoSQL, this project gave me an oppertunity to learn how to plan and execute a project within a given time frame. I believe this is how any job will be once I graduate. I was able to tackle a project on my own and I'm very satisfied with how much I produced. I really enjoy talking about my project. Per usual, job interviewers always ask me, "What is a project you have worked on? And tell me more about it." Even though I've been involved in several projects, this is the one I always talk about. I feel very comfortable talking about every aspect of the project because I know all the ins and outs of the project. 
 
 
 ## References
